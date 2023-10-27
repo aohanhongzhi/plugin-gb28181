@@ -128,7 +128,7 @@ func (c *GB28181Config) OnRegister(req sip.Request, tx sip.ServerTransaction) {
 				}
 			}
 		} else {
-			if c.Username == "34020000002000000001" && c.Password == "123456" {
+			if c.Password == "123456" {
 				passAuth = true
 			} else {
 				GB28181Plugin.Info("No Authorization in headers for GB-28181", zap.String("id", id))
